@@ -51,6 +51,22 @@
   
 
   
+      ,"page3": {
+          "title": "My Page",
+          "content": "Salut .",
+          "url": "https://nikcleju.github.io/fastpages/mypage/",
+          "relUrl": "/mypage/",
+          "date": ""
+      }
+      
+  
+
+  
+  
+
+  
+
+  
   
 
   
@@ -59,18 +75,13 @@
   
 
   
-
-  
   
 
   
   
 
   
-  
-
-  
-      ,"page10": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://nikcleju.github.io/fastpages/robots.txt",
