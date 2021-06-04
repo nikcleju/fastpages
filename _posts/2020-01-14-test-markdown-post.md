@@ -23,6 +23,11 @@ You can use *italics*, **bold**, `code font text`, and create [links](https://ww
 
 ---
 
+## Nic: Latex math
+
+We can have Latex stuff inline $a=\sqrt{5}$ and maybe also on separate line:
+$$b = a^3 \oplus a \oplus 1$$
+
 ## Lists
 
 Here's a list:
