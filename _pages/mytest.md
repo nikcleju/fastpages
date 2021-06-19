@@ -1,7 +1,9 @@
 ---
 layout: page
-title: My Page
-permalink: /mypage/
+title: Contents
+permalink: /contents/
 ---
 
-# Salut
+# Chapter 1
+
+## The normal distribution
