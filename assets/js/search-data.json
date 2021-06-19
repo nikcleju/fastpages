@@ -52,10 +52,10 @@
 
   
       ,"page3": {
-          "title": "My Page",
-          "content": "Salut .",
-          "url": "https://nikcleju.github.io/fastpages/mypage/",
-          "relUrl": "/mypage/",
+          "title": "Contents",
+          "content": "Chapter 1 . The normal distribution .",
+          "url": "https://nikcleju.github.io/fastpages/contents/",
+          "relUrl": "/contents/",
           "date": ""
       }
       
