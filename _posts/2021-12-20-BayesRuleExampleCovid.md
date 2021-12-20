@@ -42,7 +42,7 @@ So, it seems that we must somehow consider the vaccination percentage in the who
 
 # Problem definition
 
-What is the proper name of the probability whose value is 72.3%? This is the share of non-vaccinated people within every 100 new infection cases. Therefore, it is a conditional probability. It's (mathematical) name is $P(\textrm{non-vaccinated \\| infected})$. In the fashion of Bayes rule, we write:
+What is the proper name of the probability whose value is 72.3%? This is the share of non-vaccinated people within every 100 new infection cases. Therefore, it is a conditional probability. It's (mathematical) name is $P(\textrm{non-vaccinated &#124; infected})$. In the fashion of Bayes rule, we write:
 
 $$P(NV | I) = 72.3\%$$
 
@@ -60,9 +60,9 @@ $$\frac{P(I | V)}{P(I | NV)} = ?$$
 
 Note the change in notation: we want `I|V` and `I|NV`, but what we have is actually the opposite, `NV|I` and `V|I`. This is exactly where the Bayes rule helps us.
 
-# Applying the Bayes rule
+# Using the Bayes rule
 
-Let's apply the Bayes rule to compute $P(I | V)$ and $P(I | NV)$ if we have the opposite values, $P(V | I)$ and $P(NV | I)$. We have:
+Let's apply the Bayes rule to compute $P(I &#124; V)$ and $P(I &#124; NV)$ if we have the opposite values, $P(V &#124; I)$ and $P(NV &#124; I)$. We have:
 
 $$P(I|V) = \frac{P(V|I) \cdot P(I)}{P(V)}$$
 
@@ -72,7 +72,7 @@ We want their ratio, and when dividing them the common term $P(I)$ simplifies aw
 
 $$\frac{P(I | V)}{P(I | NV)} = \frac{P(V|I) \cdot P(I)}{P(V)} \cdot \frac{P(NV)}{P(NV|I) \cdot P(I)} = \frac{P(V|I)}{P(NV|I)} \cdot \frac{P(NV)}{P(V)}$$
 
-The first term $\frac{P(V|I)}{P(NV|I)} = \frac{27.7\%}{72.3\%}$ comes from the initial data. In the second term, $P(V)$ and $P(NV)$ are the general vaccination and non-vaccination rate in the general population. The Bayes rule shows that we must consider this ratio as well in order to evaluate the actual benefit.
+The first term $\frac{P(V &#124; I)}{P(NV &#124; I)} = \frac{27.7\%}{72.3\%}$ comes from the initial data. In the second term, $P(V)$ and $P(NV)$ are the general vaccination and non-vaccination rate in the general population. The Bayes rule shows that we must consider this ratio as well in order to evaluate the actual benefit.
 
 A quick search shows us that the vaccination rate in 17 october 2021 was around $P(V) = 29.4\%$, which means $P(NV) = 70.6\%$:
 
@@ -99,4 +99,4 @@ We can rewrite the desired ratio as follows:
 
 $$\frac{P(D | V)}{P(D | NV)} = \frac{P(V|D)}{P(NV|D)} \cdot \frac{P(NV)}{P(V)} = \frac{\frac{P(V|D)}{P(NV|D)}} {\frac{P(V)}{P(NV)}}$$
 
-What we want is actually the ratio of $\frac{P(V|D)}{P(NV|D)}$ to $\frac{P(V)}{P(NV)}$, i.e. the ratio of vaccinated-to-not-vaccinated among the deceased compared to the same vaccinated-to-not-vaccinated ratio in the general population. This makes sense, now that we see it, and we could have guessed it from the initial intution. However, one can easily be fooled by statistical data. It is great that the Bayes rule leads us nicely and rigorously to this result. 
+What we want is actually the ratio of $\frac{P(V &#124; D)}{P(NV &#124; D)}$ to $\frac{P(V)}{P(NV)}$, i.e. the ratio of vaccinated-to-not-vaccinated among the deceased compared to the same vaccinated-to-not-vaccinated ratio in the general population. This makes sense, now that we see it, and we could have guessed it from the initial intution. However, one can easily be fooled by statistical data. It is great that the Bayes rule leads us nicely and rigorously to this result. 
