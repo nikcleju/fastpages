@@ -83,7 +83,7 @@ $$P(NV | I) = 72.3\%$$
 
 $$P(V | I) = 27.7\%$$
 
-Here, NV means "non-vaccinated", V means "vaccinated", and "I" means infected.
+"NV" means "non-vaccinated", "V" means "vaccinated", and "I" means infected.
 
 It is important to recognize these as **conditional probabilities**. They are conditional because they are computed for every 100 new infections, 
 i.e. restricted only to these cases.
