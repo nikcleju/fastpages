@@ -30,7 +30,7 @@ We'll see below a nice example of using this in real life.
 
 ## Some data from the news
 
-Suppose you browse Reddit and stumble upon the following data:
+Suppose you browse the news and stumble upon the following data:
 
 ![]({{ site.baseurl }}/images/2021-12-20-CovidStats_resized.png "Some Covid stats from a news headline")
 
