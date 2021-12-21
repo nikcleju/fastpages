@@ -18,7 +18,7 @@ It can be written as follows:
 
 $$P(B|A) = \frac{P(A|B) \cdot P(B)}{P(A)}$$
 
-{% include info.html text="This comes from the expansion of an intersection: 
+{% include info.html text="**Info:** This comes from the expansion of an intersection: 
 
 $$P(A \cap B) = P(A|B) \cdot P(B) = P(B|A) \cdot P(A)$$
 
