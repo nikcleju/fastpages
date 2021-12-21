@@ -34,7 +34,7 @@ Suppose you browse the news and stumble upon the following data:
 
 ![]({{ site.baseurl }}/images/2021-12-20-CovidStats_resized.png "Some Covid stats from a news headline")
 
-The infections or death rates seem much higher for non-vaccinated people:
+The rates of infection and death seem much higher for non-vaccinated people:
 
 - Infections: 72.3% non-vaccinated vs 27.3% vaccinated
 - Deaths: 92.1 % non-vaccinated vs just 7.9% vaccinated
